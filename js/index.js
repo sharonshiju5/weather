@@ -24,12 +24,6 @@ async function fetchData(){
         console.log(night);
         let col=document.getElementById("body")
 
-// "sys": {
-//     "country": "IN",
-//     "sunrise": 1733014956,
-//     "sunset": 1733056301
-
-
         if(night>=1733056301){
             if(cloud=="Rain"){
                 a=`./assets/icon_sun_clouds_rain.png`

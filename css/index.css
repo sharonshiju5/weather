@@ -4,7 +4,7 @@ body{
     /* height: 500px; */
     /* background-color: #3069a7; */
     /* background-color: #739dd3; */
-    background-image: linear-gradient(to right,#7fa4d4 , #3069a7);
+    /* background-image: linear-gradient(to right,#7fa4d4 , #3069a7); */
 }
 h1,p,h3{
     color: white;
@@ -15,10 +15,10 @@ h1,p,h3{
 .body{
     margin: 0;
     height: 730px;
-    background-image: linear-gradient(to right,#81a6d7 , #1a66b6);
     width: 100%;
     display: flex;
     align-items: center;
+    background-image: linear-gradient(to right,#81a6d7 , #1a66b6);
 }
 .container{
     margin: 0;
@@ -139,4 +139,19 @@ button:hover{
 }
 #clouds{
     flex-direction: column;
+}
+.divv{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 150px;
+    /* background-color: aliceblue; */
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    /* z-index: -1; */
+}
+video{
+    width: 70%;
+    /* height: 100%; */
 }

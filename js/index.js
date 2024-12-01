@@ -22,7 +22,7 @@ async function fetchData(){
         let night=(data.sys.sunset)
         let info=(data.weather[0].description)
         console.log(night);
-        
+        let col=document.getElementById("body")
 
 // "sys": {
 //     "country": "IN",
@@ -33,12 +33,16 @@ async function fetchData(){
         if(night>=1733056301){
             if(cloud=="Rain"){
                 a=`./assets/icon_sun_clouds_rain.png`
+                col.style.background = 'linear-gradient(to right,#7D7975 , #454749)';
             }
             else if(cloud=="Clouds"){
                 a=`./assets/icon_sun_clouds.png`
+                col.style.background = 'linear-gradient(to right,#81a6d7 , #1a66b6)';
             }
             else if(cloud="Mist"){
                 a=`./assets/mist.png`
+                col.style.background = 'linear-gradient(to right,#7D7975 , #454749)';
+
             }
             else{
                 a=`./assets/icon_sun copy.svg`
@@ -84,7 +88,13 @@ async function fetchData(){
         document.getElementById("container").innerHTML=str;
 
     } catch (error) {
-        
+
+        // alert("enetr a valid city name")
+        document.getElementById("img").innerHTML=`<video width="400"  autoplay loop>
+        <source src="./assets/404 error page with robot character.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>`
     }
 }
 
